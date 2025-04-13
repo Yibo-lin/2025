@@ -2,18 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>JS插入图片</title>
+  <title>REVIX DEMO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+  </style>
 </head>
 <body>
-  <div id="image-container"></div>
-
-  <script>
-    const img = document.createElement('img');
-    img.src = 'Dashboard_1.0.jpg';  // 替换成你的图片路径
-    img.alt = '展示图';
-    img.width = 500;
-
-    document.getElementById('image-container').appendChild(img);
-  </script>
+  <img src="Dashboard_1.0.jpg" alt="展示图">
 </body>
 </html>
