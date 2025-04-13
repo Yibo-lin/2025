@@ -1,30 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>CCLab Project</title>
-
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-
-  <script src="lib/p5.js"></script>
-  <script src="lib/p5.sound.js"></script>
+  <meta charset="UTF-8">
+  <title>JS插入图片</title>
 </head>
-
 <body>
+  <div id="image-container"></div>
 
-  <h1></h1>
+  <script>
+    const img = document.createElement('img');
+    img.src = 'Dashboard_1.0.jpg';  // 替换成你的图片路径
+    img.alt = '展示图';
+    img.width = 500;
 
-  <!-- the following div will contain the p5 canvas. -->
-  <!--<div id="p5-canvas-container"> p5 canvas will be appended here. -->
-  </div>
-
-  <p>Project Description</p>
-
-  <!-- the script tag below should always be at the bottom, right before the closing body tag -->
-  <script src="js/sketch.js"></script>
+    document.getElementById('image-container').appendChild(img);
+  </script>
 </body>
-
 </html>
